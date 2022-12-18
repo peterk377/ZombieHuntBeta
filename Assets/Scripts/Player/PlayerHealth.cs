@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
@@ -78,6 +79,13 @@ public class PlayerHealth : MonoBehaviour
         lerpTimer = 0.0f;
         durationTimer = 0.0f;
         overlay.color = new Color(overlay.color.r, overlay.color.g, overlay.color.b, 1);
+
+        if (hp <= 0)
+        {
+            SceneManager.LoadScene(1);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 
     public void Heal(float heal)
