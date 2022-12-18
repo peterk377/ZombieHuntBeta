@@ -11,8 +11,10 @@ public class car : Interactable
 
     public void FinishLevel() {
 
-        
+
         SceneManager.LoadScene(1);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
 
     }
 
