@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89c24ed20c4ea764bb1a5fe96ee3ee9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2896603798750924505, guid: fadb23fb95daf7a4b893cbf8f1d4dfbc, type: 3}
 --- !u!195 &5413636740584046444
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -867,15 +867,15 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 796103694, guid: fadb23fb95daf7a4b893cbf8f1d4dfbc, type: 3}
+        m_TargetAssemblyTypeName: PlayerHealth, Assembly-CSharp
+        m_MethodName: TakeDMG
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 10
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4440c1d20bd392f4997885b0ee5bb68b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2896603798750924509, guid: fadb23fb95daf7a4b893cbf8f1d4dfbc, type: 3}
   dmg: 10
 --- !u!1 &5413636739230818152
 GameObject:

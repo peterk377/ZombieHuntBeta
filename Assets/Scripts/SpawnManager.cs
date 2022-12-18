@@ -27,7 +27,9 @@ public class SpawnManager : MonoBehaviour
         Instantiate(barricade, new Vector3(13, 1, -17), Quaternion.Euler(0, 0, 90)); 
     }
 
-    public void SpawnZombiesLVL1() { 
+    public void SpawnZombies1() { 
+        
+         Instantiate(zombie, new Vector3(-267, 2, -857), Quaternion.identity);
         
     
     }
