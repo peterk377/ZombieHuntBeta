@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject zombie;
     public GameObject testEnemy;
     public GameObject barricade;
+    public GameObject b1, b2, b3;
     public void SpawnZombie()
     {
         Instantiate(zombie, new Vector3(48, -1, -8), Quaternion.identity);
@@ -25,4 +26,10 @@ public class SpawnManager : MonoBehaviour
     {
         Instantiate(barricade, new Vector3(13, 1, -17), Quaternion.Euler(0, 0, 90)); 
     }
+
+    public void SpawnZombiesLVL1() { 
+        
+    
+    }
+
 }
